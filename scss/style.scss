@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Metal+Mania);
+@import url(https://fonts.googleapis.com/css?family=Arbutus);
+$hd:teal;
+$gen:#000;
+$dg:gray;
+$font-hd:'Arbutus',helvetica;
+$font-gen:'Metal Mania',helvetica;
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+html,body{height:100%;}
+body{
+  background-color:#1c2310;
+background:repeating-linear-gradient(-180deg, #006652 0.3%,#008060 1%); 
+  color:$gen;
+  font-family:$font-gen;
+  font-size:.8rem;
+}
+.center{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.wrapper{
+  position:relative;
+  width:30rem;height:30rem;
+  border:1rem solid #000;
+  border-radius:50%;
+  background-color:#000;
+   @include box-shadow(0px 0px 1rem 0.3rem #002933,0px 0px 0.1rem 0.2rem #80ffff);
+  #ctl{
+    position:absolute;
+    border-radius:50%;
+    background-color:#008060;
+    background:repeating-linear-gradient(-180deg, #595959 0.3%, #666666 1%);
+    //background:repeating-linear-gradient(-180deg, #527a7a 0.3%,#3d5c5c 1%);
+    @include box-shadow(0px 0px 1rem 0.3rem #000,0px 0px 0.1rem 0.2rem #80ffff);
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    width:14rem;height:14rem;
+    border:1rem solid #000;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    #hd{
+      position:relative;
+      font-family:$font-hd;
+      font-size:2.3rem;
+      padding-left:1.2rem;
+      padding-right:1.2rem;
+      #rg{
+        position:absolute;
+        font-size:.6rem;top:25%;right:6%;
+      }
+      #s-str-i
+        {
+          position:absolute;
+          border-radius:50%;
+          border:2px solid black;
+          background-color:#660000;
+          width:.5rem;height:.5rem;
+          top:90%;left:75%;          
+        }
+    }
+    #md{
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      &>div{
+        padding:5px;
+      }
+      //-----md-fst------//
+      .md-fst{
+        #s-cnt{
+        width:3rem;height:2rem;
+        border:3px solid black;
+        border-radius:10px;
+        background-color:#660000;
+        color:#660000;
+        //color:#ff3333;
+        font-size:1.4rem;
+        text-align:center;
+        line-height:-10px;
+        letter-spacing:3px;@include box-shadow(0 0 0.4rem #000 inset);
+          background:repeating-linear-gradient(180deg,#330000 0.3%,#660000 1%);
+        }
+      }
+       //-----md-sec------//
+      .md-sec{
+        #s-st{
+        width:2rem;height:2rem;
+        border:3px solid black;
+        border-radius:50%;
+        background-color:#ff3333;
+        cursor:pointer;
+          background:repeating-linear-gradient(180deg,#b30000 0.3%,#ff3333 1%);
+        @include box-shadow(0 0 0.4rem #000 inset);
+         &:active{
+            transform:translate(0,4%);
+          }
+       }
+      }
+       //-----md-trd------//
+      .md-trd{
+        #s-str{
+        position:relative;
+        width:2rem;height:2rem;
+        border:3px solid black;
+        border-radius:50%;
+        background-color:#b3b300;
+        cursor:pointer;
+        @include box-shadow(0 0 0.4rem #000 inset);
+         &:active{
+            transform:translate(0,4%);
+          }
+        background:repeating-linear-gradient(180deg,#999900 0.3%,#ffff00 1%); 
+       }
+      }
+       //-----md-lst------//
+      #cnt,#st,#str{
+        text-align:center;
+      }  
+    }
+    //----------lst-----------------------//
+    .lst{
+      display:flex;
+      flex-direction:row;
+      #s-of{
+        align-self:center;
+        margin-right:5px;
+      }
+      #s-on{
+        align-self:center;
+        margin-left:5px;
+      }
+      #onf{
+        position:relative;//important for child div
+        width:2.3rem;height:1.5rem;
+        border:2px solid black;
+        background-color:black;
+        border-radius:5px;
+        cursor:pointer; 
+        @include box-shadow(0 0 0.4rem #000 inset);
+      #onf-i
+      {
+        width:54%;height:100%;//crucial for proper position
+        border:1.5px solid black;
+        background-color:#0099ff;
+        border-radius:5px;
+        float:left;
+        @include box-shadow(0 0 0.4rem #000 inset);
+      }
+    }
+   }
+  //end of lst   
+  }
+  //end of controller
+  //-------segment creation---------------//
+  #tp{
+    position:relative;
+    width:100%;
+    height:50%;;
+    border-radius:10px;
+    display:flex;
+    flex-direction:row;
+    #lt1{
+      width:50%;height:100%;
+      border:.5rem solid #000;
+      border-radius:10px;
+      background-color:#00b300;//green
+      opacity:0.6;
+      border-top-left-radius:100%;
+      background:repeating-linear-gradient(-90deg, #008000 0.3%,#00b300 1%);
+    }
+    #rt1{
+      width:50%;height:100%;
+      border:.5rem solid #000;
+      border-radius:10px;
+      background-color:#ff3333;
+      opacity:0.6;
+      border-top-right-radius:100%;
+      background:repeating-linear-gradient(-90deg,#b32400 0.3%,#ff3333 1%);
+    }
+  }
+  #bt{
+    position:relative;
+    width:100%;
+    height:50%;
+    border-radius:10px;
+    display:flex;
+    flex-direction:row;
+    #lt2{
+      width:50%;height:100%;
+      border:.5rem solid #000;
+      border-radius:10px;
+      background-color:#ffff33;
+      opacity:0.6;
+      border-bottom-left-radius:100%;
+       background:repeating-linear-gradient(-90deg,#cccc00 0.3%,#ffff33 1%);
+    }
+    #rt2{
+      width:50%;height:100%;
+      border:.5rem solid #000;
+      border-radius:10px;
+      background-color:#0099ff;
+      opacity:0.6;
+      border-bottom-right-radius:100%;
+      background:repeating-linear-gradient(-90deg,#1f7a7a 0.3%,#0099ff 1%);
+    }
+  }
+    //-------end of segment creation---------------//
+}
+//-------end of wrapper---------------//

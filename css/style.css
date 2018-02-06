@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Metal+Mania);
+@import url(https://fonts.googleapis.com/css?family=Arbutus);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #1c2310;
+  background: repeating-linear-gradient(-180deg, #006652 0.3%, #008060 1%);
+  color: #000;
+  font-family: "Metal Mania", helvetica;
+  font-size: .8rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  border: 1rem solid #000;
+  border-radius: 50%;
+  background-color: #000;
+  -webkit-box-shadow: 0px 0px 1rem 0.3rem #002933, 0px 0px 0.1rem 0.2rem #80ffff;
+  -moz-box-shadow: 0px 0px 1rem 0.3rem #002933, 0px 0px 0.1rem 0.2rem #80ffff;
+  box-shadow: 0px 0px 1rem 0.3rem #002933, 0px 0px 0.1rem 0.2rem #80ffff;
+}
+.wrapper #ctl {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #008060;
+  background: repeating-linear-gradient(-180deg, #595959 0.3%, #666666 1%);
+  -webkit-box-shadow: 0px 0px 1rem 0.3rem #000, 0px 0px 0.1rem 0.2rem #80ffff;
+  -moz-box-shadow: 0px 0px 1rem 0.3rem #000, 0px 0px 0.1rem 0.2rem #80ffff;
+  box-shadow: 0px 0px 1rem 0.3rem #000, 0px 0px 0.1rem 0.2rem #80ffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14rem;
+  height: 14rem;
+  border: 1rem solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper #ctl #hd {
+  position: relative;
+  font-family: "Arbutus", helvetica;
+  font-size: 2.3rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.wrapper #ctl #hd #rg {
+  position: absolute;
+  font-size: .6rem;
+  top: 25%;
+  right: 6%;
+}
+.wrapper #ctl #hd #s-str-i {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #660000;
+  width: .5rem;
+  height: .5rem;
+  top: 90%;
+  left: 75%;
+}
+.wrapper #ctl #md {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.wrapper #ctl #md > div {
+  padding: 5px;
+}
+.wrapper #ctl #md .md-fst #s-cnt {
+  width: 3rem;
+  height: 2rem;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #660000;
+  color: #660000;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: -10px;
+  letter-spacing: 3px;
+  -webkit-box-shadow: 0 0 0.4rem #000 inset;
+  -moz-box-shadow: 0 0 0.4rem #000 inset;
+  box-shadow: 0 0 0.4rem #000 inset;
+  background: repeating-linear-gradient(180deg, #330000 0.3%, #660000 1%);
+}
+.wrapper #ctl #md .md-sec #s-st {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid black;
+  border-radius: 50%;
+  background-color: #ff3333;
+  cursor: pointer;
+  background: repeating-linear-gradient(180deg, #b30000 0.3%, #ff3333 1%);
+  -webkit-box-shadow: 0 0 0.4rem #000 inset;
+  -moz-box-shadow: 0 0 0.4rem #000 inset;
+  box-shadow: 0 0 0.4rem #000 inset;
+}
+.wrapper #ctl #md .md-sec #s-st:active {
+  transform: translate(0, 4%);
+}
+.wrapper #ctl #md .md-trd #s-str {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid black;
+  border-radius: 50%;
+  background-color: #b3b300;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0.4rem #000 inset;
+  -moz-box-shadow: 0 0 0.4rem #000 inset;
+  box-shadow: 0 0 0.4rem #000 inset;
+  background: repeating-linear-gradient(180deg, #999900 0.3%, #ffff00 1%);
+}
+.wrapper #ctl #md .md-trd #s-str:active {
+  transform: translate(0, 4%);
+}
+.wrapper #ctl #md #cnt, .wrapper #ctl #md #st, .wrapper #ctl #md #str {
+  text-align: center;
+}
+.wrapper #ctl .lst {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper #ctl .lst #s-of {
+  align-self: center;
+  margin-right: 5px;
+}
+.wrapper #ctl .lst #s-on {
+  align-self: center;
+  margin-left: 5px;
+}
+.wrapper #ctl .lst #onf {
+  position: relative;
+  width: 2.3rem;
+  height: 1.5rem;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0.4rem #000 inset;
+  -moz-box-shadow: 0 0 0.4rem #000 inset;
+  box-shadow: 0 0 0.4rem #000 inset;
+}
+.wrapper #ctl .lst #onf #onf-i {
+  width: 54%;
+  height: 100%;
+  border: 1.5px solid black;
+  background-color: #0099ff;
+  border-radius: 5px;
+  float: left;
+  -webkit-box-shadow: 0 0 0.4rem #000 inset;
+  -moz-box-shadow: 0 0 0.4rem #000 inset;
+  box-shadow: 0 0 0.4rem #000 inset;
+}
+.wrapper #tp {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper #tp #lt1 {
+  width: 50%;
+  height: 100%;
+  border: .5rem solid #000;
+  border-radius: 10px;
+  background-color: #00b300;
+  opacity: 0.6;
+  border-top-left-radius: 100%;
+  background: repeating-linear-gradient(-90deg, #008000 0.3%, #00b300 1%);
+}
+.wrapper #tp #rt1 {
+  width: 50%;
+  height: 100%;
+  border: .5rem solid #000;
+  border-radius: 10px;
+  background-color: #ff3333;
+  opacity: 0.6;
+  border-top-right-radius: 100%;
+  background: repeating-linear-gradient(-90deg, #b32400 0.3%, #ff3333 1%);
+}
+.wrapper #bt {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper #bt #lt2 {
+  width: 50%;
+  height: 100%;
+  border: .5rem solid #000;
+  border-radius: 10px;
+  background-color: #ffff33;
+  opacity: 0.6;
+  border-bottom-left-radius: 100%;
+  background: repeating-linear-gradient(-90deg, #cccc00 0.3%, #ffff33 1%);
+}
+.wrapper #bt #rt2 {
+  width: 50%;
+  height: 100%;
+  border: .5rem solid #000;
+  border-radius: 10px;
+  background-color: #0099ff;
+  opacity: 0.6;
+  border-bottom-right-radius: 100%;
+  background: repeating-linear-gradient(-90deg, #1f7a7a 0.3%, #0099ff 1%);
+}
