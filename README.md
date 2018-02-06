@@ -1,6 +1,6 @@
 # [SimonGame](https://rkm09.github.io/SimonGame)
 
-###[FCC FrontEnd Advanced Projects - 4/4 : Simon Game](https://www.freecodecamp.org/challenges/build-a-simon-game)
+### [FCC FrontEnd Advanced Projects - 4/4 : Simon Game](https://www.freecodecamp.org/challenges/build-a-simon-game)
 
 **Description**: The Simon Game project is based on the game of the same name which creates a series of tones and lights and requires a user to repeat the sequence. 
 
