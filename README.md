@@ -1,4 +1,4 @@
-# [SimonGame](https://rkm09.github.io/SimonGame)
+# [SimonGame](https://rkm09.github.io/SimonGame/)
 
 ### [FCC FrontEnd Advanced Projects - 4/4 : Simon Game](https://www.freecodecamp.org/challenges/build-a-simon-game)
 
